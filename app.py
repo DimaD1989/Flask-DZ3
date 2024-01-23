@@ -1,9 +1,7 @@
+from FlaskDz3.form import RegistrationForm
+from FlaskDz3.models import db, User
 from flask import Flask, request, render_template
 from flask_wtf.csrf import CSRFProtect
-
-from HW_3.form import RegistrationForm
-from HW_3.models import db, User
-
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'mySekretkey'
